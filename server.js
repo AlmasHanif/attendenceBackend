@@ -13,7 +13,7 @@ app.use(express.json());
 
 ///user route///
 app.use("/api" , userRoute );
-app.use(express.static('public'));
+// app.use(express.static('public'));
 // app.use(express.static(__dirname+"./uploads"))
 app.get('/', (req, res) => {
     res.send('Hello World!')
